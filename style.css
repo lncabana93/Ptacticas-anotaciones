@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-size: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 3em;
+}
+.contenedor {
+  background-color: blue;
+  /* display: inline-block; */
+}
+.em-rm {
+  background-color: red;
+  padding: 1rem;
+  border: 0.2rem solid greenyellow;
+  margin: 1rem;
+  border-radius: 1rem;
+  font-size: 1em;
+  width: 50vw; /* el (vw) hace referencia al with */
+}
+
+.px {
+  background-color: green;
+  padding: 16px;
+  border: solid 3px blueviolet;
+  margin: 16px;
+  border-radius: 16px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.contenedor-1 {
+  background-color: greenyellow;
+  display: inline-block;
+  width: 100%;
+}
+
+.em-rem-1 {
+  background-color: red;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  font-size: 2em;
+  margin-top: 1rem;
+  border: solid 0.2rem black;
+  width: 75vw;
+}
+
+.px-1 {
+  background-color: blue;
+  padding: 32px;
+  margin: 32px;
+  border-radius: 32px;
+  font-size: 32px;
+  margin-top: 32px;
+  border: solid 3px black;
+  width: 75%;
+}
+
+article {
+  background-color: blueviolet;
+}
+
+.articulos {
+  position: sticky;
+  top: 0;
+  background-color: #f8f3f3b8;
+  width: 10vw;
+  font-size: 2em;
+}
+
+h2 {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 2em;
+  background-color: yellowgreen;
+}
+
+.padre {
+  width: 600px;
+  height: 600px;
+  border: solid 0.2rem red;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  margin: 20px auto;
+  /* para poder posisionar a los elementos hijos al elemento padre le tengo que poner position relative */
+}
+
+/* no pierde el lugar en el que estaba posisionado esto quiere decir si hay otro en su lugar lo pisa */
+.relativo {
+  background-color: fuchsia;
+  font-size: 1em;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 200px;
+  padding-top: 1rem;
+}
+/* Esta en un solo lugar quieto no se puede mover */
+.estatico {
+  background-color: green;
+  width: 60px;
+  height: 60px;
+  position: static;
+  padding-top: 1rem;
+  font-size: 1em;
+  left: 200px; /* no funcionan los puse como ejemplos */
+  bottom: 100px; /* no funcionan los puse como ejemplos */
+  top: 10px; /* no funcionan los puse como ejemplos */
+}
+
+/* Una vez que lo posiciono en su lugar puedo posisionar otro elemento */
+.absoluto {
+  background-color: purple;
+  font-size: 1em;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  padding-top: 1rem;
+  left: 400px;
+  bottom: 0;
+}
+
+.whatsapp {
+  color: white;
+  background-color: green;
+  text-align: center;
+  font-size: 2em;
+  width: 3vw;
+  border-radius: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 90vw; /*  con la propiedad left el elemento se va a correr -->> */
+  /* right: 20px */ /* con esta propiedad el elemento se va a correr <-- */
+}
+
+/* los zindex se utilizan siempre con posision absuluta */
+
+.z-index.azul {
+  background-color: blue;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+  bottom: 280px;
+}
+.z-index.marron {
+  background-color: brown;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 30;
+  left: 15px;
+  bottom: 300px;
+}
+.z-index.teal {
+  background-color: teal;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 50;
+  left: 20px;
+  bottom: 350px;
+}
+/* FORMULARIOS  */
+form {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+fieldset {
+  background-color: #a11a1a3f;
+  border: none;
+  margin-left: 0.1rem;
+  padding-bottom: 0.2rem;
+}
+legend {
+  position: relative;
+  bottom: 0.5rem;
+
+  background-color: #a11a1a3f;
+  font-size: 1em;
+}
+.mt10 {
+  margin-top: 1rem;
+
+  font-size: 1em;
+}
+
+.bt2 {
+  margin-bottom: 0.2rem;
+}
+
+input {
+  position: relative;
+  left: 1vw;
+  border-radius: 1rem;
+  border: solid rgba(255, 0, 0, 0.096);
+}
+
+button {
+  border: none;
+  background-color: greenyellow;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+/* Input Focus (para cuando tabulo cambie el color de las casillas) */
+
+input[name="nombr"]:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+input[name="apell"]:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+input[name="doc"]:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+input[name="edad"]:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+input[name="calle"]:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+input[name="num"]:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+
+input[name="number"]:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+input[name="barrio"]:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+
+button:focus {
+  background-color: rgba(255, 0, 0, 0.53);
+}
+
+/* Propiedad para que cuando tabuleo se cambie de color el contenedor */
+
+fieldset:focus-within {
+  background-color: greenyellow;
+}
