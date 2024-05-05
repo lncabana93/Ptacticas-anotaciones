@@ -1,0 +1,67 @@
+git init <-- inicia un repositorio
+
+git add <nombre del archivo> <-- agrega al area de preparacion
+
+git commit -m "mensaje" <---- para hacer un commit
+
+git diff <-- para ver las diferencias entre commit
+
+git reset --soft head~1 <-- moverme 1 espacio abajo del head que es ultimo commit
+
+git reset --soft <numero de commi> <--te pone el commit al stegin area
+
+
+git reset --mixed <-- lo lleva al commit a working directory area de trabajo
+
+git reset --hard <--- lo borra la informacion se pierde (usar solo si estoy seguro de lo que estoy haciendo)
+
+git brach <-- ver ramas creadas
+
+git branch <nombre rama> <-- crear una rama
+
+git switch <-- movernos entre ramas
+
+git switch <nombre de la rama> <--- con el - nos movemos a la ultima rama que estuvimos parados
+
+ git switch -c <nombre de la rama> <--- crea la rama y se mueve a la rama creada
+
+  git branch -d <nombre de la rama> <--- borra la una rama (nunca tenemos que estar parados dentro de la rama que queremos borrar sino va salir error)
+
+  git branch -m <bombre de la rama><nombre que le quiero poner> <-- modifica el nombre de una rama (no puedo estar dentro de la rama que quiero cambiar el nombre)
+
+ git branch -m <nombre de la rama> <<-- parado dentro de la rama que quiero cambiar el nombre
+
+ git merge <nombre> <-- para pasar informacion de una rama a la otra (siempre tengo que estar posisionado en la rama a la que quiero traerme la informacion)
+
+ git log --oneline --all <-- desde la rama main nos muestran todos los commit de todas las ramas
+
+ git show <numero de commit> <-- me muestra los cambios que hice en el commit
+
+ #modificando mis alias
+
+ git log-mejorado <-- (git config --global alias.log-mejorado "log --oneline --graph --all --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr'"
+)
+
+git log-simple <-- (git config --global alias.log-simple "log --oneline --graph --all"
+)
+
+$ git config --global alias.log-simple "log --oneline --graph --all" comando para configurar el alias el comando que quieras poner va entre comillas sin el git
+
+git reflog (lleva un registro de hacian donde fue/apunto head) te muestra todo el historial de commit
+
+
+
+## GIT CLONE ##
+
+git clone <direccion del archivo> <-- traer un repositorio a mi directorio
+
+git push <-- para subir los commit al repositorio remoto (se pone a que repositorio quiero subir "origin")
+ejemplo= git push origin main
+
+#### GIT PULL & GIT FETCH ####
+
+git pull <-- te actualiza los cambios del remoto a tu ordenador
+git pull trae los cambios y directamente los fuciona con nuestras rama!
+tenemos menos control de conflicto que si por ahi queremos conservar algunos cambios que tenemos en nuestro ordenador esta la reemplaza!
+
+git fetch <-- me muestra los datos que se modificaron
