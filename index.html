@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
- <!--  link para tener el logo de wp -->
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!--  link para tener el logo de wp -->
     <title>Mi practica</title>
   </head>
   <body>
@@ -354,7 +354,7 @@
           <input type="apell" name="apell" id="apell" required />
         </div>
         <div class="bt2">
-          <label for="Doc">Documento:*</label> 
+          <label for="Doc">Documento:*</label>
           <input type="text" name="doc" required />
         </div>
         <div class="bt2">
@@ -365,18 +365,78 @@
 
       <fieldset class="mt10">
         <legend class="bt2">Ubicación</legend>
-       <div class="bt2"> <label for="calle">Calle:*</label>
-        <input type="text" name="calle" id="calle" required /></div>
-        <div class="bt2"><label for="num">Numeracion</label>
-          <input type="number" name="num" /></div>
-       <div class="bt2"> <label for="piso">Piso:*</label>
-        <input type="number" name="number" /></div>
-        <div class="bt2"><label for="barrio">Barrio:*</label>
-          <input type="text" name="barrio" /></div>
+        <div class="bt2">
+          <label for="calle">Calle:*</label>
+          <input type="text" name="calle" id="calle" required />
+        </div>
+        <div class="bt2">
+          <label for="num">Numeracion</label> <input type="number" name="num" />
+        </div>
+        <div class="bt2">
+          <label for="piso">Piso:*</label> <input type="number" name="number" />
+        </div>
+        <div class="bt2">
+          <label for="barrio">Barrio:*</label>
+          <input type="text" name="barrio" />
+        </div>
       </fieldset>
       <button class="mt10">Aceptar</button>
       <button class="mt10">Cancelar</button>
     </form>
+
+    <h2>Practicas de Selectores Avanzados CSS</h2>
+
+    <h3>Selectores combinados</h3>
+
+    <div>
+      <p>Holis que hacen</p>
+    </div>
+    <p>Esto solamente es a modo de prueba</p>
+
+    <h3>Selector descendiente directo (hijo directo)</h3>
+
+    <p>Magda<strong>Martinez</strong></p>
+    <p>Luciano Nicolas<strong>Cabaña</strong></p>
+    <p>Patricia Veronica<strong>Balbuena</strong></p>
+    <p>Juana Elena<strong>Roa</strong></p>
+    <p>Magda<strong>Martinez</strong></p>
+    <p>Magda<strong>Martinez</strong></p>
+    <p>Magda<strong>Martinez</strong></p>
+    <p>luciano <em>cabaña</em></p>
+    <p>esto es un simple p con <em>algo importante</em></p>
+    <p>lupita no para de <em>ladrar nunca</em></p>
+    <p>estos pendejos no se dejan de joderle a la <i>chiquita</i></p>
+    <p>nose para que le atan si ella quiere estar aca <i>chiquitaaaaaa</i></p>
+    <p>se escapo y se fue a la puta</p>
+
+    <h4>Bueno continuamos con <strong>la practica</strong></h4>
+
+    <hr>
+
+    <section id="importante" class="seccion-roja">
+      <article class="destacado">los</article>
+      <article>pibes</article>
+      <article>de</article>
+      <article class="destacado">la cabeza</article>
+    </section>
+<article>este article esta simplemente fuera del secction</article>
+
+<nav id="prueba" class="secion-greenyellow">
+    <li class="tunami"></li>
+    <li></li>
+    <li></li>
+    <li class="tunami"></li>
+</nav>
+
+<div>
+  <p>Lorem, ipsum dolor.</p>
+  <span>Lorem, ipsum dolor.</span>
+  <h3>Lorem, ipsum dolor.</h3>
+  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+  <h5>holis</h5> <!-- no lo pinta de amarillo porque no es hermano del p -->
+</div>
+
+
 
     <script type="module" src="/main.js"></script>
   </body>
