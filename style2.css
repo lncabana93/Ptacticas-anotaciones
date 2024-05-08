@@ -1,0 +1,92 @@
+:root {
+  --mi-color-favorito1: rgb(146, 97, 188);
+  --mi-color-favorito2: rgb(43, 119, 226);
+  --mi-color-favorito3: greenyellow;
+  --tamaño-grande: 3rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--mi-color-favorito1);
+}
+
+div p {
+  color: var(--mi-color-favorito3);
+}
+
+/* h1,
+h2,
+h3 {
+  color: var(--mi-color-favorito2);
+  font-size: var(--tamaño-grande);
+} */
+
+p > strong {
+  font-size: var(--tamaño-grande);
+  color: var(--mi-color-favorito3);
+}
+p > em {
+  font-size: var(--tamaño-grande);
+  color: var(--mi-color-favorito3);
+}
+p > i {
+  font-size: var(--tamaño-grande);
+  color: black;
+}
+h4 > strong {
+  font-size: var(--tamaño-grande);
+  color: red;
+}
+
+/*  ------------------------------------------------------------------------------------------------ */
+/* me esta indicando que va a modificar los article que estan dentro del section */
+
+section#importante.seccion-roja > article {
+  background-color: red;
+  width: 40vw;
+  height: 10vh;
+  border: 1px solid black;
+}
+/* para que no se pise tienen que tener el mismo peso semantico */
+
+section > article.destacado {
+  border: solid 1px black;
+  background-color: gold;
+  width: 40vw;
+  height: 10vh;
+}
+section#importante.seccion-roja > article.destacado {
+  border: solid 1px black;
+  background-color: gold;
+  width: 40vw;
+  height: 10vh;
+}
+
+nav#prueba.secion-greenyellow > li {
+    border: solid .1rem black;
+    background-color: greenyellow;
+    width: 40vw;
+    height: 10vh;
+}
+
+nav#prueba.secion-greenyellow > li.tunami{
+    background-color: orange;
+    width: 40vw;
+    height: 10vh;
+    border: solid .1rem black;
+}
+/* le estoy diciendo que p y el que le sigue a p se pinten */
+/* P + span {
+    color: greenyellow;
+    font-weight: bold;
+} */
+
