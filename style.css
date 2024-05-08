@@ -1,3 +1,8 @@
+:root{
+  --mi-color-favorito: rgb(97, 65, 185);
+  --tamaño-grande: 3rem;
+  font-size: 100%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -328,3 +333,4 @@ las propiedades @media screen se utilizan para trabajar responsive y adarpar el 
     width: 100%;
   }
 }
+
